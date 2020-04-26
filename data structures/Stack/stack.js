@@ -10,7 +10,10 @@ const Stack_ES5 = () => {
 
   const size = () => store.length;
 
-  const peak = () => store[0];
+  const peak = () => {
+    const length = store.length;
+    return store[length - 1];
+  };
 
   return {
     size,
@@ -24,7 +27,7 @@ const Stack_ES5 = () => {
 
 class Stack_ES6 {
   constructor(){
-    this.store = []
+    this.store = [];
   }
 
   push(item) {
@@ -32,14 +35,23 @@ class Stack_ES6 {
   }
 
   pop() {
+    if (this.count === 0) {
+      return;
+    }
     return this.store.pop();
   }
 
-  size() {
+  get size() {
     return this.store.length;
   }
 
   peak() {
-    return this.store[0];
+    const length = this.store.length;
+    return this.store[length - 1];
   }
 }
+
+module.exports = {
+  Stack_ES5,
+  Stack_ES6
+};

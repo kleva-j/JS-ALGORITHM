@@ -24,7 +24,7 @@ const Queues_ES5 = () => {
 
 class Queues_ES6 {
   constructor(){
-    this.store = []
+    this.store = [];
   }
 
   enqueue(item) {
@@ -35,7 +35,7 @@ class Queues_ES6 {
     return this.store.shift();
   }
 
-  size() {
+  get size() {
     return this.store.length;
   }
 
@@ -43,3 +43,8 @@ class Queues_ES6 {
     return this.store[0];
   }
 }
+
+module.exports = {
+  Queues_ES5,
+  Queues_ES6
+};

@@ -1,4 +1,3 @@
-
 //RECURSIVE IMPLEMENTATION
 
 const RecursiveBinarySearchFunction = (array, element) => {
@@ -21,3 +20,5 @@ const RecursiveBinarySearchFunction = (array, element) => {
 
   return recurse(array);
 }
+
+module.exports = RecursiveBinarySearchFunction;

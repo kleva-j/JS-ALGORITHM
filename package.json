@@ -1,0 +1,23 @@
+{
+  "name": "JS-ALGORITHM",
+  "version": "1.0.0",
+  "description": "Basic algorithms implemented using Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleva-j/JS-ALGORITHM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kleva-j/JS-ALGORITHM/issues"
+  },
+  "homepage": "https://github.com/kleva-j/JS-ALGORITHM#readme",
+  "devDependencies": {
+    "cypress": "^4.4.1"
+  }
+}

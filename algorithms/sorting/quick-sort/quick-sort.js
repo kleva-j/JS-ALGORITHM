@@ -35,6 +35,4 @@ const QuickSort = array => {
   return array;
 }
 
-const sortedList = QuickSort([5, 2, 7, 8, 19, 3]);
-// sortedList
-console.log(sortedList)
+module.exports = QuickSort;

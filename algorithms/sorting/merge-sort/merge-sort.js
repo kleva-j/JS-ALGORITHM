@@ -25,4 +25,6 @@ const MergeSort = array => {
   return merge(MergeSort(array.slice(0, mid)), MergeSort(array.slice(mid)));
 };
 
-console.log(MergeSort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]));
+// console.log(MergeSort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]));
+
+module.exports = MergeSort;

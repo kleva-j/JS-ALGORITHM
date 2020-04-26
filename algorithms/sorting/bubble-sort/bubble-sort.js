@@ -18,3 +18,5 @@ const BubbleSort = array => {
   } while(len--);
   return array;
 };
+
+module.exports = BubbleSort;
